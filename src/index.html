@@ -8,9 +8,10 @@
     <meta name="robots" content="noindex, nofollow">
 
     <meta property="og:title" content="Это моя первая страница...">
-    OpenGraph
 
     <title>Павел - веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -43,11 +44,11 @@
         <div class="about_me_conteiner">
             <h2>ОБО МНЕ</h2>
 
-            <img src="" alt="Не удалось загрузить картинку!">
+            <img src="img/miniboy.jpg" alt="Не удалось загрузить картинку!">
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eveniet corporis dicta ea dolor cum aperiam, odio nulla, fugit accusamus, iusto in, nobis vel magnam?</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos a dignissimos perspiciatis saepe vitae eum hic fugiat obcaecati dolorem eos, voluptatum modi beatae pariatur repellat sunt nostrum perferendis quibusdam. Optio!</p>
-
+            
             <input type="submit" value="Скачать резюме">
         </div>
 
@@ -56,22 +57,22 @@
 
             <ul>
                 <li>
-                    <img src="" alt="Не удалось загрузить картинку!">
+                    <img src="img/laptop.png" alt="Не удалось загрузить картинку!">
                     <h4>Веб-дизайн</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quidem voluptatum alias, aperiam vero.</p>
                 </li>
                 <li>
-                    <img src="" alt="Не удалось загрузить картинку!">
+                    <img src="img/sign.png" alt="Не удалось загрузить картинку!">
                     <h4>Разработка</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt blanditiis qui iure asperiores inventore, debitis.</p>
                 </li>
                 <li>
-                    <img src="" alt="Не удалось загрузить картинку!">
+                    <img src="img/rocket.png" alt="Не удалось загрузить картинку!">
                     <h4>CEO-Оптимизация</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, debitis.</p>
                 </li>
                 <li>
-                    <img src="" alt="Не удалось загрузить картинку!">
+                    <img src="img/gramophone.png" alt="Не удалось загрузить картинку!">
                     <h4>Маркетинг</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, incidunt blanditiis rem laborum ab iste!</p>
                 </li>
@@ -82,24 +83,20 @@
             <h2>КЕЙСЫ</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, libero.</p>
 
-            <input type="submit" value="<">
             <ol>
-                <li><img src="" alt="Не удалось загрузить картинку!"></li>
-                <li><img src="" alt="Не удалось загрузить картинку!"></li>
-                <li><img src="" alt="Не удалось загрузить картинку!"></li>
+                <li><img src="img/case1.jpg" alt="Не удалось загрузить картинку!"></li>
             </ol>
-            <input type="submit" value=">">
 
             <ul>
                 <li>
-                    <p><b><big>CLIENTS:</big></b></p>
+                    <h4>CLIENTS:</h4>
                     <p>Какая-то компания</p>
-                    <p><b><big>WEBSITE:</big></b></p>
+                    <h4>WEBSITE:</h4>
                     <a href="https://yandex.ru/" target="_blank">https://yandex.ru/</a>
                 </li>
                 <li>
-                    <p><b>Название проекта</b></p>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tenetur illum fuga possimus dolores, maxime veniam porro? Reiciendis assumenda molestias, officiis est veritatis unde officia dolore. Aliquid, iste molestias temporibus esse commodi necessitatibus a vero!</span>
+                    <h4>Название проекта</h4>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tenetur illum fuga possimus dolores, maxime veniam porro? Reiciendis assumenda molestias, officiis est veritatis unde officia dolore. Aliquid, iste molestias temporibus esse commodi necessitatibus a vero! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quas aspernatur officia odit commodi. Debitis.</span>
                 </li>
             </ul>
 
@@ -111,8 +108,8 @@
 
             <h3>ТИП САЙТА</h3>
             <form action="#">
-                <input type="text" name="input_type_site" id="" placeholder="Выберите пункт...">
                 <select name="list1" id="selectvalue">
+                    <option value="" disabled selected>Выберите пункт...</option>
                     <option value="opt1">option1</option>
                     <option value="opt2">option2</option>
                     <option value="opt3">option3</option>
@@ -123,8 +120,8 @@
 
             <h3>ДИЗАЙН</h3>
             <form action="#">
-                <input type="text" name="input_design" id="" placeholder="Выберите пункт...">
                 <select name="list2" id="selectvalue">
+                    <option value="" disabled selected>Выберите пункт...</option>
                     <option value="opt1">option1</option>
                     <option value="opt2">option2</option>
                     <option value="opt3">option3</option>
@@ -135,8 +132,8 @@
 
             <h3>АДАПТИВНОСТЬ</h3>
             <form action="#">
-                <input type="text" name="input_adaptability" id="" placeholder="Выберите пункт...">
                 <select name="list3" id="selectvalue">
+                    <option value="" disabled selected>Выберите пункт...</option>
                     <option value="opt1">option1</option>
                     <option value="opt2">option2</option>
                     <option value="opt3">option3</option>
@@ -146,15 +143,16 @@
             </form>
 
             <br>
-            
+
             <ul>
                 <li>
-                    <p><b>Сроки</b></p>
-                    <p><b><big>0</big></b></p>
+                    <span><b>Сроки</b></span>
+                    <br>
+                    <span><b>Стоимость</b></span>
                 </li>
                 <li>
-                    <p><b>Стоимость</b></p>
-                    <p><b><big>0</big></b></p>
+                    <p><b>1263456</b></p>
+                    <p><b>0</b></p>
                 </li>
             </ul>
         </div>
@@ -164,114 +162,75 @@
 
             <ul>
                 <li>
-                    <img src="" alt="Не удалось загрузить картинку!">
-                    <p><b><big>120</big></b></p>
-                    <p><small>СЧАСТЛИВЫХ КЛИЕНТОВ</small></p>
+                    <img src="img/smile.png" alt="Не удалось загрузить картинку!">
+                    <h4>120</h4>
+                    <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
                 </li>
                 <li>
-                    <img src="" alt="Не удалось загрузить картинку!">
-                    <p><b><big>4,600</big></b></p>
-                    <p><small>ЧАСОВ РАБОТЫ</small></p>
+                    <img src="img/sign2.png" alt="Не удалось загрузить картинку!">
+                    <h4>4,600</h4>
+                    <p>ЧАСОВ РАБОТЫ</p>
                 </li>
                 <li>
-                    <img src="" alt="Не удалось загрузить картинку!">
-                    <p><b><big>340</big></b></p>
-                    <p><small>ПРОЕКТОВ ЗАВЕРШЕНО</small></p>
+                    <img src="img/chck.png" alt="Не удалось загрузить картинку!">
+                    <h4>340</h4>
+                    <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
                 </li>
                 <li>
-                    <img src="" alt="Не удалось загрузить картинку!">
-                    <p><b><big>23</big></b></p>
-                    <p><small>НАГРАД ПОЛУЧЕНО</small></p>
+                    <img src="img/triumph.png" alt="Не удалось загрузить картинку!">
+                    <h4>23</h4>
+                    <p>НАГРАД ПОЛУЧЕНО</p>
                 </li>
             </ul>
         </div>
-        
+
         <div class="reviews_conteiner">
-           <h2>ОТЗЫВЫ</h2>
-           
-           <ol>
-               <li>
-                   <img src="" alt="Не удалось загрузить картинку!">
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero doloribus quas, ipsam, dicta necessitatibus distinctio.</p>
-                   <br>
-                   <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p>
-               </li>
-               <li>
-                   <img src="" alt="Не удалось загрузить картинку!">
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, fuga, ipsa!</p>
-                   <br>
-                   <p><b>Александр</b>, менеджер ПАО "Газпром".</p>
-               </li>
-               <li>
-                   <img src="" alt="Не удалось загрузить картинку!">
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, dicta doloribus soluta officia magnam pariatur. Voluptatem, impedit, exercitationem!</p>
-                   <br>
-                   <p><b>Мария</b>, бухгалтер ПАО "Газпром".</p>
-               </li>
-           </ol>
-            
-            <form action="#">
-                <input type="radio" name="reviews1" value="1">
-                <input type="radio" name="reviews1" value="2">
-                <input type="radio" name="reviews1" value="3">
-            </form>
+            <h2>ОТЗЫВЫ</h2>
+
+            <ol>
+                <li>
+                    <img src="img/man.png" alt="Не удалось загрузить картинку!">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero doloribus quas, ipsam, dicta necessitatibus distinctio.</p>
+                    <br>
+                    <p><b>Михаил</b>, Ген директор ПАО "Газпром".</p>
+                </li>
+            </ol>
         </div>
-        
+
         <div class="my_contacts_container">
             <h2>МОИ КОНТАКТЫ</h2>
-            
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            
+
             <ul>
                 <li>
-                    <img src="" alt="Не удалось загрузить картинку!">
+                    <img src="img/geo.png" alt="Не удалось загрузить картинку!">
                     <p>Санкт-Петербург <br> Невский проспект 11</p>
                 </li>
                 <li>
-                    <img src="" alt="Не удалось загрузить картинку!">
+                    <img src="img/mail.png" alt="Не удалось загрузить картинку!">
                     <p>info@companyname.com</p>
                 </li>
                 <li>
-                    <img src="" alt="Не удалось загрузить картинку!">
+                    <img src="img/tel.png" alt="Не удалось загрузить картинку!">
                     <p>+7 999 999-99-99</p>
                 </li>
             </ul>
-            
+
             <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
-            
+
             <form action="#">
-                <input type="text" name="customer_name" placeholder="Имя">
-                <input type="text" name="customer_email" placeholder="Email">
+                <input type="text" id="text_for_send1" name="customer_name" placeholder="Имя">
+                <input type="text" id="text_for_send2" name="customer_email" placeholder="Email">
                 <br>
-                <textarea name="customer_text" id="" cols="70" rows="5" placeholder="Сообщение"></textarea>
+                <textarea name="customer_text" cols="70" rows="5" placeholder="Сообщение"></textarea>
                 <br>
-                <input type="submit" value="Отправить">
+                <input type="submit" id="button_for_send" value="Отправить">
             </form>
-            
-            <ul>
-                <li>
-                    <a href=""><img src="" alt="Не удалось загрузить картинку!"></a>
-                </li>
-                <li>
-                    <a href=""><img src="" alt="Не удалось загрузить картинку!"></a>
-                </li>
-                <li>
-                    <a href=""><img src="" alt="Не удалось загрузить картинку!"></a>
-                </li>
-                <li>
-                    <a href=""><img src="" alt="Не удалось загрузить картинку!"></a>
-                </li>
-                <li>
-                    <a href=""><img src="" alt="Не удалось загрузить картинку!"></a>
-                </li>
-                <li>
-                    <a href=""><img src="" alt="Не удалось загрузить картинку!"></a>
-                </li>
-            </ul>
         </div>
-        
+
         <div class="google_maps">
-            
+
         </div>
     </div>
 
